@@ -1,0 +1,33 @@
+method: grid
+metric:
+  goal: minimize
+  name: z_space_KL_pi
+name: one_leaf_goal_bidirec_tree
+parameters:
+  alpha:
+    values:
+      - 1
+  env_type:
+    values:
+      - tree
+      - lattice
+  gamma:
+    values:
+      - 0.9
+  seed:
+    values:
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+  state_space_size:
+    values:
+      - 16
+      - 64
+program: policy_aggregation_experiment.py
